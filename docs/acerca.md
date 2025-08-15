@@ -1,12 +1,14 @@
 ---
 title: "Acerca de mí"
-date: 2025-01-01
+date: 2025-08-15
 ---
 
 # Acerca de mí
 
-**Nombre:** Manuela Ruiz
-**Bio:** Tengo 20 años y estoy cursando mi tercer año de Ingeniería en Informática.
+**Nombre:** Manuela Ruiz  
+
+**Bio:** Tengo 20 años y estoy cursando mi tercer año de Ingeniería en Informática.  
+
 **Enlaces:**  
 - [GitHub](https://github.com/manuruiz5)  
 
