@@ -1,5 +1,5 @@
 ---
-title: "Portafolio — Inicio"
+title: "Portafolio Manuela Ruiz"
 date: 2025-01-01
 ---
 

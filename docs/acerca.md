@@ -5,10 +5,14 @@ date: 2025-01-01
 
 # Acerca de mí
 
-Breve presentación personal, intereses y objetivos para este curso.
+**Nombre:** Manuela Ruiz
+**Bio:** Tengo 20 años y estoy cursando mi tercer año de Ingeniería en Informática.
+**Enlaces:**  
+- [GitHub](https://github.com/manuruiz5)  
 
-## Habilidades
-- Lenguajes / herramientas relevantes
+
+## Objetivo del curso:
+Mi objetivo del curso es fortalecer mis habilidades en IA y documentar mi progreso a través del portafolio. 
 
 ## Contacto
-- Email institucional
+manuela.ruiz@correo.ucu.edu.uy
