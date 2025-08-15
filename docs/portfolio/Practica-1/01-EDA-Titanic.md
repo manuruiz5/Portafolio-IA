@@ -3,13 +3,13 @@ title: "Práctica 1 — EDA Titanic"
 date: 2025-08-15
 ---
 
-# Plantilla de entrada de portafolio
-
-Completa esta plantilla para cada entrada del portafolio.
+# Práctica 1 — EDA Titanic
 
 ## Contexto
 
 Esta práctica consistió en realizar un **Análisis Exploratorio de Datos (EDA)** sobre el dataset del Titanic, disponible en [Kaggle](https://www.kaggle.com/competitions/titanic/data).
+
+La solución se encuentra en  [GoogleColab] (https://colab.research.google.com/drive/1pCw_QCZsqQB8gcLmOhqY-XBz3gmItlxT?usp=sharing).
 
 El objetivo fue explorar y comprender la estructura de los datos, identificar patrones iniciales y posibles problemas de calidad que afecten el modelado posterior.
 
@@ -19,7 +19,7 @@ El objetivo fue explorar y comprender la estructura de los datos, identificar pa
 - Identificar relaciones iniciales entre variables y la supervivencia.  
 - Generar visualizaciones para respaldar los hallazgos.  
 
-## Actividades (con tiempos estimados)
+## Actividades 
 
 | Actividad                                   | Tiempo | Resultado esperado                   |
 |---------------------------------------------|:------:|--------------------------------------|
@@ -30,11 +30,11 @@ El objetivo fue explorar y comprender la estructura de los datos, identificar pa
 | Visualizaciones iniciales                   | 15m    | Gráficos y relaciones clave          |
 
 ## Desarrollo
-
+???+ info "Desarrollo"
 1. **Investigación inicial**  
-   Dataset: contiene información sobre pasajeros del Titanic (ej. sexo, edad, clase de ticket,  familiares a bordo, número de cabina y supervivencia). 
+   - Dataset: contiene información sobre pasajeros del Titanic (ej. sexo, edad, clase de ticket,  familiares a bordo, número de cabina y supervivencia). 
 
-   Variable objetivo: `Survived` (1 = sobrevivió, 0 = no sobrevivió).  
+  -  Variable objetivo: `Survived` (1 = sobrevivió, 0 = no sobrevivió).  
 
 2. **Preguntas iniciales**  
    - **2.1: ¿Qué factores crees que más influyeron en la supervivencia?**
@@ -53,8 +53,8 @@ El objetivo fue explorar y comprender la estructura de los datos, identificar pa
    - Uso de Google Colab con librerías pandas, numpy, matplotlib, seaborn.
    - Conexión directa con Kaggle API para descarga del dataset.
 4. **Conociendo el dataset**  
-   -Dimensiones: 891 filas × 12 columnas.
-   Valores faltantes: Cabin, Age.
+   - Dimensiones: 891 filas × 12 columnas.
+   - Valores faltantes: Cabin, Age.
 
 5. **EDA visual** (ver Evidencias)
     - Supervivencia por sexo: Las mujeres sobrevivieron en mayor proporción que los hombres.
@@ -64,16 +64,16 @@ El objetivo fue explorar y comprender la estructura de los datos, identificar pa
 
 
 ## Evidencias
- Figura 1: Supervivencia por sexo.
+**Figura 1: Supervivencia por sexo.**
 ![alt text](image.png)
 
-Figura 2: Tasa de supervivencia por clase.
+**Figura 2: Tasa de supervivencia por clase.**
 ![alt text](image-2.png)
 
-Figura 3: Distribución de edad por supervivencia.
+**Figura 3: Distribución de edad por supervivencia.**
 ![alt text](image-3.png)
 
-Figura 4: Matriz de correlaciones.
+**Figura 4: Matriz de correlaciones.**
 ![alt text](image-1.png)
 
 ## Reflexión
@@ -83,7 +83,7 @@ Este análisis confirmó hipótesis iniciales, el sexo y la clase fueron determi
 Como siguiente paso, se podrían crear variables derivadas (ej. tamaño del grupo familiar) y aplicar imputación de Age para no perder datos valiosos.
 
 ## Referencias
-- [Kaggle] (https://www.kaggle.com/competitions/titanic/data)
+- [Kaggle](https://www.kaggle.com/competitions/titanic/data)
 
 
 
