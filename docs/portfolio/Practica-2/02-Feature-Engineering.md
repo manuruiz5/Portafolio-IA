@@ -61,7 +61,7 @@ Además, exploramos los componentes principales de Scikit-learn para clasificaci
 |-------------------|-----------|--------|----------|---------|
 | 0 (no sobrevivió) |    0.82   |  0.89  |   0.86   |   110   |
 | 1 (sobrevivió)    |    0.80   |  0.70  |   0.74   |    69   |
-| **Accuracy**      |           |        | **0.82** |   179   |
+| Accuracy          |           |        |   0.82   |   179   |
 | macro avg         |    0.81   |  0.79  |   0.80   |   179   |
 | weighted avg      |    0.81   |  0.82  |   0.81   |   179   |  
 
