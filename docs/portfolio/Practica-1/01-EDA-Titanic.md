@@ -31,40 +31,40 @@ El objetivo fue explorar y comprender la estructura de los datos, identificar pa
 
 ## Desarrollo
 
-1. **Investigación inicial**  
-    - Dataset: contiene información sobre pasajeros del Titanic (ej. sexo, edad, clase de ticket, familiares a bordo, número de cabina y supervivencia).  
-    - Variable objetivo: `Survived` (1 = sobrevivió, 0 = no sobrevivió).  
+### 1. Investigación inicial
+- Dataset: contiene información sobre pasajeros del Titanic (ej. sexo, edad, clase de ticket, familiares a bordo, número de cabina y supervivencia).  
+ - Variable objetivo: `Survived` (1 = sobrevivió, 0 = no sobrevivió).  
 
-2. **Preguntas iniciales**
+### 2. Preguntas iniciales
 
-### 2.1: ¿Qué factores crees que más influyeron en la supervivencia?
+#### 2.1: ¿Qué factores crees que más influyeron en la supervivencia?
 - Los factores que podrían influir en la supervivencia son la edad y el sexo ya que debían tener prioridad los niños y sus madres.  
 - La clase de ticket también podría influir ya que los pasajeros de primera clase tuvieron mayor acceso a botes salvavidas y mejores ubicaciones en el barco, lo que incrementó sus posibilidades de sobrevivir.  
 - Tamaño del grupo familiar (sibsp y parch): Viajar acompañado podría influir tanto positiva como negativamente, dependiendo de si facilitó la asistencia mutua o si dificultó la evacuación.  
 
-### 2.2: ¿Qué desafíos de calidad de datos esperas encontrar?
+#### 2.2: ¿Qué desafíos de calidad de datos esperas encontrar?
 - Valores faltantes: Especialmente en variables como `age` y `cabin`.  
 - Datos no estructurados o inconsistentes: En campos como `ticket` y `cabin`, que no siguen un formato único.  
 
-### 2.3: ¿Qué variables podrían estar correlacionadas?
+#### 2.3: ¿Qué variables podrían estar correlacionadas?
 - `pclass` y `fare`: El precio del ticket está directamente relacionado con la clase del pasajero.  
 - `sibsp` y `parch`: Ambas describen el tamaño de la familia a bordo, por lo que podrían correlacionarse.  
 - `pclass` y `survival`: Los pasajeros de clases más altas tuvieron mayores tasas de supervivencia.  
 
 
-3. **Configuración del entorno**  
-   - Uso de Google Colab con librerías `pandas`, `numpy`, `matplotlib`, `seaborn`.  
-   - Conexión directa con Kaggle API para descarga del dataset.  
+#### 3. Configuración del entorno
+- Uso de Google Colab con librerías `pandas`, `numpy`, `matplotlib`, `seaborn`.  
+- Conexión directa con Kaggle API para descarga del dataset.  
 
-4. **Conociendo el dataset**  
-   - Dimensiones: 891 filas × 12 columnas.  
-   - Valores faltantes: `Cabin`, `Age`.  
+#### 4. Conociendo el dataset
+- Dimensiones: 891 filas × 12 columnas.  
+- Valores faltantes: `Cabin`, `Age`.  
 
-5. **EDA visual** (ver Evidencias)  
-    - Supervivencia por sexo: Las mujeres sobrevivieron en mayor proporción que los hombres.  
-    - Tasa de supervivencia por clase: Primera clase tuvo mayor tasa de supervivencia (~63%), tercera clase la más baja (~24%).  
-    - Distribución de edad: Picos en adultos jóvenes; los menores de 10 años tienen mayor supervivencia.  
-    - Correlaciones numéricas: `Fare` correlaciona positivamente con `Survived` y negativamente con `Pclass`.  
+#### 5. EDA visual
+- Supervivencia por sexo: Las mujeres sobrevivieron en mayor proporción que los hombres.  
+- Tasa de supervivencia por clase: Primera clase tuvo mayor tasa de supervivencia (~63%), tercera clase la más baja (~24%).  
+- Distribución de edad: Picos en adultos jóvenes; los menores de 10 años tienen mayor supervivencia.  
+- Correlaciones numéricas: `Fare` correlaciona positivamente con `Survived` y negativamente con `Pclass`.  
 
 ## Evidencias
 **Figura 1: Supervivencia por sexo.**
