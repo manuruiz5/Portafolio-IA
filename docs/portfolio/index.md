@@ -9,5 +9,5 @@ Bienvenido a las entradas del portafolio. Usá la plantilla para crear nuevas p�
 (`01-...`, `02-...`).
 
 - Plantilla: [plantilla.md](plantilla.md)
-- Primera entrada: [01-EDA-Titanic.md](Practica-1/01-EDA-Titanic.md)
-
+- Práctica 1: [01-EDA-Titanic.md](Practica-1/01-EDA-Titanic.md)
+- Práctica 2: [02-Feature-Engineering.md](Practica-2/02-Feature-Engineering.md)
