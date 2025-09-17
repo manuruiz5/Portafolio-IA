@@ -11,4 +11,4 @@ Bienvenido a las entradas del portafolio. Usá la plantilla para crear nuevas p�
 - Plantilla: [plantilla.md](plantilla.md)
 - Práctica 1: [01-EDA-Titanic.md](Practica-1/01-EDA-Titanic.md)
 - Práctica 2: [02-Feature-Engineering.md](Practica-2/02-Feature-Engineering.md)
-- Práctica 4: [04-Regresion-Logistica-y-Lineal.md](Practica-2/04-Regresion-Logistica-y-Lineal.md)
+- Práctica 4: [04-Regresion-Logistica-y-Lineal.md](Practica-4/04-Regresion-Logistica-y-Lineal.md)
