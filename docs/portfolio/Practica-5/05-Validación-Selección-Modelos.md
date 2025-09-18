@@ -303,24 +303,22 @@ Por lo tanto, necesitamos ajustar dichos parámetros de forma sistemática.
 
 1. **Selección de métodos de búsqueda**
 
-
      * Usamos **GridSearchCV** y **RandomizedSearchCV** de `sklearn.model_selection`.  
      * Ambos permiten explorar combinaciones de hiperparámetros, pero con estrategias diferentes:  
-     * **GridSearchCV** prueba **todas las combinaciones posibles** (exhaustivo).  
-     * **RandomizedSearchCV** selecciona **combinaciones aleatorias** (más rápido en espacios grandes).  
+           * **GridSearchCV** prueba **todas las combinaciones posibles** (exhaustivo).  
+           * **RandomizedSearchCV** selecciona **combinaciones aleatorias** (más rápido en espacios grandes).  
 
 2. **Espacios de búsqueda**
 
-
-   - **Random Forest**: número de estimadores, profundidad máxima y tamaño mínimo de split.  
-   - **Logistic Regression**: parámetro de regularización `C` y número de iteraciones.  
-   - **Ridge**: fuerza de regularización `alpha`.  
+       -  **Random Forest**: número de estimadores, profundidad máxima y tamaño mínimo de split.  
+       - **Logistic Regression**: parámetro de regularización `C` y número de iteraciones.  
+       - **Ridge**: fuerza de regularización `alpha`.  
 
    - Como el modelo ganador fue **Random Forest**, el espacio de búsqueda usado incluyó:
 
-   - `n_estimators`: [50, 100, 200]  
-   - `max_depth`: [None, 10, 20, 30]  
-   - `min_samples_split`: [2, 5, 10]  
+           - `n_estimators`: [50, 100, 200]  
+           - `max_depth`: [None, 10, 20, 30]  
+          - `min_samples_split`: [2, 5, 10]  
 
 #### 📊 Resultados obtenidos
 
