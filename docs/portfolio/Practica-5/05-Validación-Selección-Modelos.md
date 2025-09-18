@@ -62,7 +62,7 @@ En este caso, se comparan modelos como **Logistic Regression, RidgeClassifier y 
 
 ---
 
-## Actividades (con tiempos estimados)
+## Actividades 
 
 | Actividad                              | Resultado esperado                                                         |
 | -------------------------------------- | -------------------------------------------------------------------------- |
@@ -253,11 +253,13 @@ En este paso realizamos una **competencia entre diferentes algoritmos de clasifi
 
 Se generaron dos gráficas comparativas que se encuentran en evidencias como grafica 2.
 
-1. **Distribución de Accuracy por Modelo (Boxplot)**  
+1. **Distribución de Accuracy por Modelo (Boxplot)** 
+
    - Permite ver la dispersión de los scores de validación cruzada.  
    - El modelo **Random Forest** muestra valores consistentemente más altos.  
 
 2. **Accuracy Promedio ± Desviación Estándar (Barplot)**  
+
    - Resume el rendimiento promedio de cada modelo junto con su estabilidad.  
    - El **Random Forest** lidera en accuracy, mientras que Ridge queda rezagado.  
 
