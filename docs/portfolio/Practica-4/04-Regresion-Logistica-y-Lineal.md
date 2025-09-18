@@ -1,8 +1,3 @@
----
-
-title: "Práctica 4 — Regresión Lineal"
-date: 2025-09-16
-----------------
 
 # Práctica 4 — Regresión Lineal y Logística 
 
@@ -196,20 +191,23 @@ El ciclo típico de un proyecto de ML sigue estos pasos:
 ### 🧠 Paso 6: Preguntas de Reflexión  
 
 **1. ¿Cuál es la diferencia principal entre regresión lineal y logística?**  
+
 - La **regresión lineal** predice valores **continuos** (por ejemplo, el precio de una casa).  
 - La **regresión logística** predice valores **categóricos/binarios** (por ejemplo, benigno vs maligno).  
 
 **2. ¿Por qué dividimos los datos en entrenamiento y prueba?**  
+
 - Para asegurarnos de que el modelo no solo memorice los datos, sino que también pueda **generalizar a datos nuevos**.  
 - El **train/test split** permite entrenar con una parte de los datos y luego evaluar el desempeño en ejemplos que el modelo nunca vio.  
 
-
 **3. ¿Qué significa una exactitud del 95%?**  
+
 - Significa que de cada **100 pacientes**, el modelo clasifica correctamente a **95**.  
 - En nuestro caso, de 114 pacientes de prueba, el modelo acertó en 109 y se equivocó en 5.  
 
 
 **4. ¿Cuál es más peligroso: predecir "benigno" cuando es "maligno", o al revés?**  
+
 - Es **más peligroso predecir "benigno" cuando en realidad es maligno**, porque el paciente podría no recibir tratamiento a tiempo.  
 - En cambio, predecir "maligno" cuando era benigno genera preocupación innecesaria, pero no pone en riesgo la vida del paciente.  
 
@@ -225,12 +223,15 @@ El ciclo típico de un proyecto de ML sigue estos pasos:
 ### 📝 Paso 8: Reflexión Final  
 
 **1. ¿Cuál modelo usarías para predecir el salario de un empleado?**  
+
 - Usaría **regresión lineal**, porque el salario es un **valor continuo** que puede tomar muchos posibles montos.  
 
 **2. ¿Cuál modelo usarías para predecir si un email es spam?**  
+
 - Usaría **regresión logística**, porque el problema es de **clasificación binaria** (spam o no spam).  
 
 **3. ¿Por qué es importante separar datos de entrenamiento y prueba?**  
+
 - Porque permite comprobar si el modelo **generaliza bien a datos nuevos**.  
 - Si solo usamos datos de entrenamiento, el modelo puede “memorizar” (overfitting).  
 - Con datos de prueba podemos evaluar el **desempeño real** en situaciones que no vio durante el entrenamiento.  
@@ -238,7 +239,7 @@ El ciclo típico de un proyecto de ML sigue estos pasos:
 
 ## Evidencias
 
-* [Código completo para ejecutar en Google Colab](https://colab.research.google.com/drive/14INyAU9dGAbxu2TPs-GuP_bgt4n8zkKS?usp=sharing)
+* [Código ejecutado por partes en Google Colab](https://colab.research.google.com/drive/14INyAU9dGAbxu2TPs-GuP_bgt4n8zkKS?usp=sharing)
 
 ### Código con los espacios en blanco rellenados que se ejecutó:
 
