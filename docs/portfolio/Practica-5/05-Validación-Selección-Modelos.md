@@ -362,12 +362,12 @@ La motivación es que un modelo no solo debe ser preciso, sino también **interp
 
 #### 🔑 Decisiones tomadas
 
-1. **Modelo para explicabilidad**
+**Modelo para explicabilidad**
 
    - Se utilizó el **Random Forest optimizado** (modelo ganador).  
    - Al no requerir escalado, se trabajó directamente con los datos originales.  
 
-2. **Técnicas aplicadas**
+**Técnicas aplicadas**
 
    - **Feature Importance** → Importancia relativa de cada característica.  
    - **Análisis por categorías** → Se agruparon variables en factores académicos, demográficos y económicos.  
@@ -378,6 +378,7 @@ La motivación es que un modelo no solo debe ser preciso, sino también **interp
 #### 📊 Resultados obtenidos
 
 **Top 10 características más importantes:**
+
   1. Curricular units 2nd sem (approved) → **0.1516**
   2. Curricular units 2nd sem (grade) → **0.1193**
   3. Curricular units 1st sem (approved) → **0.0987**
@@ -394,6 +395,7 @@ Se generó la **Gráfica 3** mostrando las 15 características más importantes 
 La característica más relevante fue: **Curricular units 2nd sem (approved)**.  
 
 Esto sugiere que para reducir el abandono estudiantil se debe intervenir en:
+
   1. Monitorear y mejorar: Curricular units 2nd sem (approved)  
   2. Monitorear y mejorar: Curricular units 2nd sem (grade)  
   3. Monitorear y mejorar: Curricular units 1st sem (approved)  
@@ -407,6 +409,7 @@ Esto sugiere que para reducir el abandono estudiantil se debe intervenir en:
     - Graduate: 18.1%  
 
 **Top 5 características que influyeron en esta predicción:**
+
   - Curricular units 2nd sem (approved) → 0.00 (importancia 0.1516)  
   - Curricular units 2nd sem (grade) → 0.00 (importancia 0.1193)  
   - Curricular units 1st sem (approved) → 0.00 (importancia 0.0987)  
@@ -448,10 +451,13 @@ Ejemplo (Estudiante #0):
 - Árbol 5 → Dropout  
 - **Predicción final** → Dropout (voto mayoritario).  
 
-- Los **factores académicos** explican la mayoría de las decisiones del modelo.  
-- La explicabilidad permite generar **acciones concretas de intervención** en estudiantes en riesgo.  
-- El análisis individual muestra cómo los **primeros semestres son críticos** para predecir abandono.  
-- Los árboles individuales ilustran las **reglas de decisión** que sustentan las predicciones globales.  
+Los **factores académicos** explican la mayoría de las decisiones del modelo.  
+
+La explicabilidad permite generar **acciones concretas de intervención** en estudiantes en riesgo.  
+
+El análisis individual muestra cómo los **primeros semestres son críticos** para predecir abandono.  
+
+Los árboles individuales ilustran las **reglas de decisión** que sustentan las predicciones globales.  
 
 #### ¿Por qué es importante la explicabilidad?
 
