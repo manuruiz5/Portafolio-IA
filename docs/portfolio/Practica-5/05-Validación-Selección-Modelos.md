@@ -105,10 +105,13 @@ Preparar el entorno asegura que todos los pasos posteriores se puedan ejecutar s
 - Variables: 36 características (demográficas, académicas, socioeconómicas)
 - Valor: Reducir tasas de abandono, mejorar retención estudiantil
 
-- Se carga el dataset desde UCI ML Repository usando fetch_ucirepo.
-- Se separan las features (X) de la variable objetivo (y).
-- Se explora la información básica del dataset: número de estudiantes y características, nombres de las primeras columnas y estadísticas de interés (edad al matricularse, etc.).
-- Se analiza la variable objetivo: clases presentes, distribución y significado de cada categoría.
+Se carga el dataset desde UCI ML Repository usando fetch_ucirepo.
+
+Se separan las features (X) de la variable objetivo (y).
+
+Se explora la información básica del dataset: número de estudiantes y características, nombres de las primeras columnas y estadísticas de interés (edad al matricularse, etc.).
+
+Se analiza la variable objetivo: clases presentes, distribución y significado de cada categoría.
 
 Conocer el dataset permite entender la estructura de los datos antes de entrenar modelos.
 
@@ -221,32 +224,38 @@ En este paso realizamos una **competencia entre diferentes algoritmos de clasifi
 #### ⚙️ Decisiones tomadas
 
 1. **Logistic Regression (con escalado)**  
+
    - Se utilizó un `Pipeline` con `StandardScaler` y `LogisticRegression`.  
    - La regresión logística requiere escalado para que la magnitud de las variables no afecte el ajuste del modelo.  
    - Es un modelo **interpretable** y ampliamente usado en problemas médicos.
 
 2. **Ridge Classifier (con regularización L2)**  
+
    - Variante de la regresión logística que incluye regularización L2 para evitar **overfitting**.  
    - También requiere escalado, por lo que se incluyó `StandardScaler`.  
 
 3. **Random Forest (ensemble, sin escalado)**  
+
    - Modelo basado en múltiples árboles de decisión (bagging).  
    - No requiere escalado ya que los árboles se basan en umbrales de variables y no en magnitudes.  
    - Se espera un mejor desempeño en datasets con relaciones no lineales.  
 
 #### 📊 Resultados obtenidos
 
-- **Logistic Regression**  
+**Logistic Regression**  
+
   - Accuracy promedio: **0.7618**  
   - Desviación estándar: **0.0061**  
   - Muy estable (scores: `[0.768, 0.768, 0.763, 0.755, 0.755]`)
 
-- **Ridge Classifier**  
+ **Ridge Classifier**  
+
   - Accuracy promedio: **0.7509**  
   - Desviación estándar: **0.0032**  
   - Muy estable, pero con menor desempeño que la regresión logística estándar.  
 
-- **Random Forest**  
+**Random Forest** 
+
   - Accuracy promedio: **0.7658**  
   - Desviación estándar: **0.0064**  
   - Muy estable y el **mejor resultado global**.  
@@ -482,7 +491,7 @@ Un modelo inestable puede dar resultados contradictorios y generar riesgos en di
 ## Reflexión
 
 Esta práctica permitió integrar varios conceptos fundamentales de **machine learning aplicado**:
-  
+
 - Aprendimos la importancia de usar **pipelines y validación cruzada** para evitar data leakage y obtener métricas más realistas.  
 - Comprobamos que la elección de la técnica de validación (KFold vs StratifiedKFold) influye directamente en la **estabilidad del modelo**.  
 - La comparación de modelos mostró que los algoritmos basados en ensambles como **Random Forest** pueden superar en rendimiento a modelos lineales, sin necesidad de escalado.  
