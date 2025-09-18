@@ -304,10 +304,10 @@ Por lo tanto, necesitamos ajustar dichos parámetros de forma sistemática.
 1. **Selección de métodos de búsqueda**
 
 
-   - Usamos **GridSearchCV** y **RandomizedSearchCV** de `sklearn.model_selection`.  
-   - Ambos permiten explorar combinaciones de hiperparámetros, pero con estrategias diferentes:  
-     - **GridSearchCV** prueba **todas las combinaciones posibles** (exhaustivo).  
-     - **RandomizedSearchCV** selecciona **combinaciones aleatorias** (más rápido en espacios grandes).  
+   * Usamos **GridSearchCV** y **RandomizedSearchCV** de `sklearn.model_selection`.  
+   * Ambos permiten explorar combinaciones de hiperparámetros, pero con estrategias diferentes:  
+     * **GridSearchCV** prueba **todas las combinaciones posibles** (exhaustivo).  
+     * **RandomizedSearchCV** selecciona **combinaciones aleatorias** (más rápido en espacios grandes).  
 
 2. **Espacios de búsqueda**
 
