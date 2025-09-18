@@ -293,36 +293,43 @@ Por lo tanto, necesitamos ajustar dichos parámetros de forma sistemática.
 #### 🔑 Decisiones tomadas
 
 1. **Selección de métodos de búsqueda**
+
    - Usamos **GridSearchCV** y **RandomizedSearchCV** de `sklearn.model_selection`.  
    - Ambos permiten explorar combinaciones de hiperparámetros, pero con estrategias diferentes:  
      - **GridSearchCV** prueba **todas las combinaciones posibles** (exhaustivo).  
      - **RandomizedSearchCV** selecciona **combinaciones aleatorias** (más rápido en espacios grandes).  
 
 2. **Espacios de búsqueda**
+
    - **Random Forest**: número de estimadores, profundidad máxima y tamaño mínimo de split.  
    - **Logistic Regression**: parámetro de regularización `C` y número de iteraciones.  
    - **Ridge**: fuerza de regularización `alpha`.  
 
    Como el modelo ganador fue **Random Forest**, el espacio de búsqueda usado incluyó:
+
    - `n_estimators`: [50, 100, 200]  
    - `max_depth`: [None, 10, 20, 30]  
    - `min_samples_split`: [2, 5, 10]  
 
 #### 📊 Resultados obtenidos
 
-- **GridSearchCV** (36 combinaciones probadas):  
+**GridSearchCV** (36 combinaciones probadas):  
+
   - Mejores parámetros: `max_depth=None`, `min_samples_split=5`, `n_estimators=100`  
   - Accuracy promedio: **0.7783**  
 
-- **RandomizedSearchCV** (20 combinaciones aleatorias):  
+**RandomizedSearchCV** (20 combinaciones aleatorias):  
+
   - Mejores parámetros: `n_estimators=100`, `min_samples_split=5`, `max_depth=30`  
   - Accuracy promedio: **0.7783**  
 
 **Comparación de eficiencia:**
+
 - GridSearch evaluó **36 configuraciones** → más exhaustivo pero más lento.  
 - RandomizedSearch evaluó **20 configuraciones** → más rápido, mismo resultado.  
 
-**Modelo final optimizado:**  
+**Modelo final optimizado:** 
+
 - Accuracy promedio = **0.7783 ± 0.0067**  
 
 #### 🧾 Interpretación
@@ -347,10 +354,12 @@ La motivación es que un modelo no solo debe ser preciso, sino también **interp
 #### 🔑 Decisiones tomadas
 
 1. **Modelo para explicabilidad**
+
    - Se utilizó el **Random Forest optimizado** (modelo ganador).  
    - Al no requerir escalado, se trabajó directamente con los datos originales.  
 
 2. **Técnicas aplicadas**
+
    - **Feature Importance** → Importancia relativa de cada característica.  
    - **Análisis por categorías** → Se agruparon variables en factores académicos, demográficos y económicos.  
    - **Predicciones individuales** → Ejemplo de interpretación para un estudiante en riesgo.  
@@ -359,7 +368,7 @@ La motivación es que un modelo no solo debe ser preciso, sino también **interp
 
 #### 📊 Resultados obtenidos
 
-- **Top 10 características más importantes:**
+**Top 10 características más importantes:**
   1. Curricular units 2nd sem (approved) → **0.1516**
   2. Curricular units 2nd sem (grade) → **0.1193**
   3. Curricular units 1st sem (approved) → **0.0987**
@@ -371,9 +380,11 @@ La motivación es que un modelo no solo debe ser preciso, sino también **interp
   9. Curricular units 1st sem (evaluations) → **0.0349**
   10. Previous qualification (grade) → **0.0343**
 
-- Se generó la **Gráfica 3** mostrando las 15 características más importantes se encuentra en evidencias.
-- La característica más relevante fue: **Curricular units 2nd sem (approved)**.  
-- Esto sugiere que para reducir el abandono estudiantil se debe intervenir en:
+Se generó la **Gráfica 3** mostrando las 15 características más importantes se encuentra en evidencias.
+
+La característica más relevante fue: **Curricular units 2nd sem (approved)**.  
+
+Esto sugiere que para reducir el abandono estudiantil se debe intervenir en:
   1. Monitorear y mejorar: Curricular units 2nd sem (approved)  
   2. Monitorear y mejorar: Curricular units 2nd sem (grade)  
   3. Monitorear y mejorar: Curricular units 1st sem (approved)  
@@ -386,16 +397,17 @@ La motivación es que un modelo no solo debe ser preciso, sino también **interp
     - Enrolled: 8.2%  
     - Graduate: 18.1%  
 
-- **Top 5 características que influyeron en esta predicción:**
+**Top 5 características que influyeron en esta predicción:**
   - Curricular units 2nd sem (approved) → 0.00 (importancia 0.1516)  
   - Curricular units 2nd sem (grade) → 0.00 (importancia 0.1193)  
   - Curricular units 1st sem (approved) → 0.00 (importancia 0.0987)  
   - Curricular units 1st sem (grade) → 0.00 (importancia 0.0589)  
   - Tuition fees up to date → 1.00 (importancia 0.0466)  
 
-- Esto muestra cómo el **desempeño en los primeros semestres** y el **pago de matrícula** son determinantes en el riesgo de abandono.
+Esto muestra cómo el **desempeño en los primeros semestres** y el **pago de matrícula** son determinantes en el riesgo de abandono.
 
 **Visualización de árboles**
+
 - Se graficaron **3 árboles representativos de los 100 del bosque**.  
 - Promedio de profundidad (5 primeros árboles): **21.2**  
 - Promedio de nodos: **1139**  
@@ -403,6 +415,7 @@ La motivación es que un modelo no solo debe ser preciso, sino también **interp
 La **Gráfica 4** en evidencias muestra ejemplos de reglas de decisión de los árboles con profundidad limitada (máx=3).  
 
 - Ejemplo de regla:  
+
 |--- Curricular units 2nd sem (approved) <= 3.50
 
 | |--- Curricular units 2nd sem (evaluations) <= 7.50
@@ -412,11 +425,13 @@ La **Gráfica 4** en evidencias muestra ejemplos de reglas de decisión de los �
  **🌲 Diversidad del bosque**
 
 El poder del **Random Forest** proviene de la **diversidad entre sus árboles**:
+
 - Cada árbol se entrena con una muestra distinta (**bootstrap**).  
 - Cada división de nodos usa un subconjunto aleatorio de características.  
 - La predicción final es el **voto mayoritario**.  
 
 Ejemplo (Estudiante #0):  
+
 - Árbol 1 → Graduate  
 - Árbol 2 → Dropout  
 - Árbol 3 → Dropout  
@@ -466,7 +481,8 @@ Un modelo inestable puede dar resultados contradictorios y generar riesgos en di
 
 ## Reflexión
 
-Esta práctica permitió integrar varios conceptos fundamentales de **machine learning aplicado**:  
+Esta práctica permitió integrar varios conceptos fundamentales de **machine learning aplicado**:
+  
 - Aprendimos la importancia de usar **pipelines y validación cruzada** para evitar data leakage y obtener métricas más realistas.  
 - Comprobamos que la elección de la técnica de validación (KFold vs StratifiedKFold) influye directamente en la **estabilidad del modelo**.  
 - La comparación de modelos mostró que los algoritmos basados en ensambles como **Random Forest** pueden superar en rendimiento a modelos lineales, sin necesidad de escalado.  
