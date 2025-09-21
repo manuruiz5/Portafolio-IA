@@ -521,7 +521,7 @@ En resumen, la práctica no solo fortaleció habilidades técnicas, sino tambié
 ### Gráfica 3:
 ![Caracteristicas](image2.png)
 
-### Gráfica 2:
+### Gráfica 4:
 ![árboles](image3.png)
 
 
