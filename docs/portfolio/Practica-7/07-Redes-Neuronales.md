@@ -1,4 +1,4 @@
-# 📝 **Práctica 7 — De Perceptrón a Redes Neuronales**
+# 📝 **Del perceptrón al aprendizaje profundo: cómo las redes neuronales superan los límites lineales**
 
 ## Contexto
 
@@ -740,33 +740,13 @@ Estas curvas son esenciales para ajustar hiperparámetros como regularización o
 Porque abstrae la mayor parte del proceso de entrenamiento, inicialización y optimización, lo que **reduce la complejidad pero limita la personalización**.  
 
 A diferencia de TensorFlow o PyTorch, **no permite modificar fácilmente la arquitectura, funciones de pérdida o ciclo de entrenamiento**, sacrificando flexibilidad en favor de simplicidad.
+---
 
-### 🧠 16: Experimentando con el Dataset de Círculos Concéntricos
+### 🔗 Experimento adicional
 
-En este paso, experimentamos con el dataset de círculos concéntricos generado por make_circles() de Scikit-Learn. Este conjunto de datos es útil para comprender cómo un perceptrón básico maneja datos no linealmente separables. El dataset consiste en dos clases organizadas en círculos concéntricos, lo que implica que no pueden ser separadas por una simple línea recta.
+Ver artículo extra: [**Limitaciones del Perceptrón en Círculos Concéntricos*](Extra-Circulos-Concentricos.md)
 
-#### Generación y Visualización del Dataset:
-
-* Primero, generamos y visualizamos los datos en dos dimensiones, donde las características **Feature 1** y **Feature 2** se representan en un gráfico de dispersión. Las clases están representadas por puntos rojos y azules. Como resultado, observamos que los puntos de la **Clase 0** y **Clase 1** se distribuyen en círculos concéntricos.
-
-* A continuación, entrenamos un **perceptrón básico** para clasificar este conjunto de datos. Dado que los círculos concéntricos no son linealmente separables, el perceptrón enfrenta dificultades para encontrar una solución que separe correctamente las dos clases.
-
-* Para comprender mejor el comportamiento del perceptrón, graficamos su **frontera de decisión**, lo que nos permite visualizar cómo clasifica el espacio de características. Aunque el perceptrón intenta trazar una línea de separación, la frontera generada no divide correctamente las dos clases.
-
-#### Resultado obtenido:
-
-Las gráficas se encuentran en evidencias. 
-
-* La imagen muestra claramente los dos grupos de puntos distribuidos de manera circular, con los puntos de la **Clase 0** (rojos) en el centro y los de la **Clase 1** (azules) en el borde exterior.
-
-* El **perceptrón** obtiene una **precisión de 0.4000**, lo que indica que el modelo está fallando en clasificar correctamente las dos clases. Como era de esperar, debido a que el problema no es linealmente separable, el perceptrón no puede generar una correcta frontera de decisión utilizando solo una capa.
-
-* La **frontera de decisión** del perceptrón es claramente visible en el gráfico. Aunque el modelo intenta generar una separación, la línea trazada no refleja una correcta división de las clases. El área verde y morada indica que el modelo no logra separar adecuadamente los puntos de las dos clases, lo que confirma las limitaciones del perceptrón para resolver este problema no lineal.
-
-
-Este experimento destaca cómo el **perceptrón básico** enfrenta serias dificultades al tratar de resolver datasets no linealmente separables, como el caso de los círculos concéntricos. A pesar de que el modelo realiza una clasificación aproximada, su **precisión de solo 40%** evidencia que un perceptrón simple no es adecuado para problemas de clasificación complejos.
-
-La visualización de la **frontera de decisión** subraya que, aunque el perceptrón intenta generar una separación, no puede manejar la complejidad inherente al problema. Esto demuestra la necesidad de redes neuronales más sofisticadas, como las redes **MLP (Multi-Layer Perceptron)**, que pueden manejar problemas no lineales mediante capas ocultas.
+Este experimento complementario muestra cómo un perceptrón simple falla al clasificar datos no lineales (círculos concéntricos), destacando la importancia de las redes MLP para resolver este tipo de problemas.
 
 ---
 
@@ -809,11 +789,7 @@ En conclusión, esta práctica fue fundamental para entender la evolución de lo
 ### Gráfica 8 - Matriz de Confusión Comparativa:
 ![Matriz de Confusión Comparativa](image7.png)
 
-### Gráfica 9 - Dataset: Círculos Concéntricos:
-![Dataset: Círculos Concéntricos](image8.png)
 
-### Gráfica 10 - Perceptrón en Círculos Concéntricos:
-![Perceptrón en Círculos Concéntricos](image9.png)
 
 ---
 
