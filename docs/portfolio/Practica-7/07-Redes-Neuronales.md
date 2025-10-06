@@ -23,18 +23,9 @@ El dataset será utilizado para demostrar cómo las redes neuronales pueden apre
 
 Las **redes neuronales artificiales** son modelos de aprendizaje inspirados en el sistema nervioso de los seres vivos. Se componen de unidades llamadas **neuronas artificiales** que adoptan valores y están conectadas por **sinapsis** que tienen asociados **pesos**. Cada neurona procesa las señales recibidas a través de las conexiones y genera una salida modificada por una **función de activación**.
 
-### ** Perceptrón**
+### **Perceptrón**
 
-El **perceptrón**, desarrollado por **Frank Rosenblatt** en 1958, es el modelo más simple de una red neuronal. Se trata de un clasificador binario, es decir, un modelo que clasifica entradas en dos clases. El perceptrón consiste en una neurona cuya salida depende de la suma ponderada de las entradas y un **sesgo** (bias). Su funcionamiento se describe con la siguiente fórmula:
-
-\[
-y = w_1 x_1 + w_2 x_2 + \dots + w_n x_n + b
-\]
-
-Donde:
-- **w** son los pesos asociados a cada entrada \( x \),
-- **b** es el **sesgo** o **bias**,
-- **y** es la salida de la neurona.
+El **perceptrón**, desarrollado por **Frank Rosenblatt** en 1958, es el modelo más simple de una red neuronal. Se trata de un clasificador binario, es decir, un modelo que clasifica entradas en dos clases. El perceptrón consiste en una neurona cuya salida depende de la suma ponderada de las entradas y un **sesgo** (bias). 
 
 ### **Funciones de Activación**
 
@@ -115,16 +106,23 @@ Al ejecutar el código, obtuvimos el siguiente resultado en la consola:
 1️⃣ PROBLEMA AND: Solo verdadero cuando AMBAS entradas son 1
 
 x1| x2| AND esperado
+
 0 | 0 | 0
+
 0 | 1 | 0
+
 1 | 0 | 0
+
 1 | 1 | 1
 
 Probando AND con pesos: w1=0.5, w2=0.5, bias=-0.7
 
 0,0 → 0 (esperado 0) ✅
+
 0,1 → 0 (esperado 0) ✅
+
 1,0 → 0 (esperado 0) ✅
+
 1,1 → 1 (esperado 1) ✅
 
 Se generó un gráfico que se encuentra en evidencias como gráfico 1.
@@ -175,9 +173,13 @@ x1| x2| OR esperado
 1 | 1 | 1
 
 Probando OR con pesos: w1=0.5, w2=0.5, bias=-0.2
+
 0,0 → 0 (esperado 0) ✅
+
 0,1 → 1 (esperado 1) ✅
+
 1,0 → 1 (esperado 1) ✅
+
 1,1 → 1 (esperado 1) ✅
 
 La visualización generada mostró los siguientes puntos y la línea de separación:
@@ -218,7 +220,9 @@ x | NOT esperado
 1 | 0
 
 Probando NOT con peso: w1=-1, bias=0.5
+
 0 → 1 (esperado 1) ✅
+
 1 → 0 (esperado 0) ✅
 
 La visualización generada mostró los siguientes puntos y la línea de separación(gráfica 3):
@@ -456,16 +460,19 @@ En esta sección se implementa una **red neuronal profesional** utilizando la li
 
 1. **Arquitectura:**
 
+
    * Dos capas ocultas (`64` y `32` neuronas) con activación `ReLU`.
    * Capa de salida con `sigmoid` para clasificación binaria.
    * Arquitectura: `20 → 64 → 32 → 1`.
 
 2. **Función de pérdida y optimizador:**
 
+
    * `binary_crossentropy` como función de pérdida, ideal para tareas binarias.
    * `adam` como optimizador por su eficiencia y rápida convergencia.
 
 3. **Hiperparámetros:**
+
 
    * **Épocas:** 30, lo que permitió una curva de aprendizaje estable.
    * **Batch size:** 32, un valor estándar que balancea estabilidad y velocidad.
@@ -591,10 +598,15 @@ Durante la ejecución se muestran mensajes informativos de **PyTorch Lightning**
 El resumen de resultados finales fue el siguiente:
 
 🎯 PyTorch Lightning model created!
+
 Input features: 20
+
 Parameters: 3,490
+
 🚀 Entrenando con PyTorch Lightning...
+
 📊 Evaluando modelo...
+
 🎯 Resultados: [{'test_loss': 0.1799493432044983, 'test_acc': 0.9333333373069763}]
 
 
@@ -738,11 +750,11 @@ Estas curvas son esenciales para ajustar hiperparámetros como regularización o
 #### 🔹 ¿Por qué sklearn MLP es más fácil pero menos flexible?
 
 Porque abstrae la mayor parte del proceso de entrenamiento, inicialización y optimización, lo que **reduce la complejidad pero limita la personalización**.  
-
 A diferencia de TensorFlow o PyTorch, **no permite modificar fácilmente la arquitectura, funciones de pérdida o ciclo de entrenamiento**, sacrificando flexibilidad en favor de simplicidad.
+
 ---
 
-### 🔗 Experimento adicional
+## Experimento adicional
 
 Ver artículo extra: [**Limitaciones del Perceptrón en Círculos Concéntricos*](Extra-Circulos-Concentricos.md)
 
