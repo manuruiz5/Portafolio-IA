@@ -12,3 +12,7 @@ date: 2025-01-01
 - 5️⃣: [05-Validación-Selección-Modelos.md](Practica-5/05-Validación-Selección-Modelos.md)
 - 6️⃣: [06-clustering-pca.md](Practica-6/06-clustering-pca.md)
 
+
+# Unidad 2 - Prácticas:
+- 7 : [07-Redes-Neuronales.md](Practica-7/07-Redes-Neuronales.md)
+
