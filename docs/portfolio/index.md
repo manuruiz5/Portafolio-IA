@@ -14,5 +14,5 @@ date: 2025-01-01
 
 
 # Unidad 2 - Prácticas:
-- 7 : [07-Redes-Neuronales.md](Practica-7/07-Redes-Neuronales.md)
+- 7 : [Del perceptrón al aprendizaje profundo: cómo las redes neuronales superan los límites lineales](Practica-7/07-Redes-Neuronales.md)
 
