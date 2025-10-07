@@ -82,6 +82,8 @@ El **descenso de gradiente** es el algoritmo de optimización más comúnmente u
 
 ---
 
+## Desarrollo:
+
 ### 🧠 1. Explorando el Perceptrón
 
 En este primer paso se configura un **perceptrón básico** para aprender y visualizar cómo funciona este algoritmo en el contexto de la lógica booleana. El perceptrón es el modelo más simple de red neuronal, utilizado para clasificación binaria. En este caso, se aplica a la tabla de verdad de una puerta lógica.
