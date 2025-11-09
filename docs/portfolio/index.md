@@ -21,7 +21,7 @@ date: 2025-01-01
 
 # Unidad 3 - Prácticas:
 
--  9️⃣ : [](Practica-9/09.md)
--  🔟 : [](Practica-10/10.md)
-- 1️⃣1️⃣ : [](Practica-11/11.md)
-- 1️⃣2️⃣ : [](Practica-12/12.md)
+-  9️⃣ : [Domina la Clasificación de Imágenes con CNN y Transfer Learning: Un Viaje de Experimentación en CIFAR-10](Practica-9/09.md)
+-  🔟 : [Miradas que Aprenden: Descifrando 102 Especies de Flores](Practica-10/10.md)
+- 1️⃣1️⃣ : [FruitVision: De COCO a Retail Inteligente con YOLO y Tracking Temporal](Practica-11/11.md)
+- 1️⃣2️⃣ : [Fine-tuning SAM para Detección Inteligente de Inundaciones: De Modelos Generales a Sistemas Especializados](Practica-12/12.md)
