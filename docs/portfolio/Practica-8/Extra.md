@@ -4,7 +4,7 @@
 
 En este experimento se buscó evaluar el rendimiento de un MLP básico frente a datasets de complejidad creciente: desde dígitos manuscritos (MNIST), hasta ropa (Fashion-MNIST) y finalmente imágenes de 100 clases (CIFAR-100).
 
-El objetivo fue comprender las capacidades y limitaciones de las redes densas al enfrentarse a problemas más complejos y observar cómo varía la precisión según la naturaleza del dataset.
+El objetivo fue comprender las capacidades y limitaciones de las redes densas al enfrentarse a problemas más complejos y observar cómo varía la precisión según la naturaleza del dataset
 
 ---
 

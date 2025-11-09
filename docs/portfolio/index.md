@@ -6,6 +6,7 @@ date: 2025-01-01
 # Portafolio
 
 # Unidad 1 - Prácticas:
+
 - 1️⃣: [01-EDA-Titanic.md](Practica-1/01-EDA-Titanic.md)
 - 2️⃣: [02-Feature-Engineering.md](Practica-2/02-Feature-Engineering.md)
 - 4️⃣: [04-Regresion-Logistica-y-Lineal.md](Practica-4/04-Regresion-Logistica-y-Lineal.md)
@@ -14,5 +15,13 @@ date: 2025-01-01
 
 
 # Unidad 2 - Prácticas:
+
 - 7️⃣ : [Del perceptrón al aprendizaje profundo: cómo las redes neuronales superan los límites lineales](Practica-7/07-Redes-Neuronales.md)
 - 8️⃣ : [Explorando la experimentación en redes neuronales: del MLP básico a la optimización avanzada](Practica-8/08.md)
+
+# Unidad 3 - Prácticas:
+
+-  9️⃣ : [](Practica-9/09.md)
+-  🔟 : [](Practica-10/10.md)
+- 1️⃣1️⃣ : [](Practica-11/11.md)
+- 1️⃣2️⃣ : [](Practica-12/12.md)
