@@ -31,3 +31,4 @@ date: 2025-01-01
 
 - 1️⃣3️⃣: [Dominando el Análisis de Sentimiento Financiero con TF-IDF y Transformers](Practica-13/13.md)
 - 1️⃣4️⃣: [Encadenando Inteligencia: Primeros Pasos con LangChain y OpenAI](Practica-14/14.md)
+- 1️⃣5️⃣: [Orquestando Inteligencia: Agentes Conversacionales con LangGraph, RAG y Memoria Dinámica](Practica-15/15.md)
