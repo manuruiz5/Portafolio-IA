@@ -25,3 +25,8 @@ date: 2025-01-01
 -  🔟 : [Miradas que Aprenden: Descifrando 102 Especies de Flores](Practica-10/10.md)
 - 1️⃣1️⃣ : [FruitVision: De COCO a Retail Inteligente con YOLO y Tracking Temporal](Practica-11/11.md)
 - 1️⃣2️⃣ : [Fine-tuning SAM para Detección Inteligente de Inundaciones: De Modelos Generales a Sistemas Especializados](Practica-12/12.md)
+
+
+# Unidad 4 - Prácticas:
+
+- 1️⃣3️⃣: [Dominando el Análisis de Sentimiento Financiero con TF-IDF y Transformers](Practica-13/13.md)
