@@ -37,4 +37,4 @@ date: 2025-01-01
 # Unidad 5 - Prácticas:
 
 - 1️⃣6️⃣: [Gestión de Accesos y APIs en Google Cloud: IAM y Servicios](Practica-16/16.md)
-- 1️⃣7️⃣: [Vertex AI Pipelines: Automatización de Flujos de Trabajo de Machine Learning](Practica-17/17.m)
+- 1️⃣7️⃣: [Vertex AI Pipelines: Automatización de Flujos de Trabajo de Machine Learning](Practica-17/17.md)
